@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/id_linear3"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:padding="8dp"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="horizontal">
+
+    <example.demosmartconfig.package_tools_javaClass.Sj_RoundIcon
+        android:id="@+id/id_icon_device"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/id_deviceName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:background="#3FFF"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/more"/>
+
+</LinearLayout>

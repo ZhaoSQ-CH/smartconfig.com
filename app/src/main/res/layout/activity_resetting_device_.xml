@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_Activity2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="example.demosmartconfig.resetting_device_Activity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#0085F8">
+
+        <TextView
+            android:id="@+id/id_topic2"
+            android:layout_height="29dp"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:text="选择设备"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:padding="2dp"
+            android:background="#0FFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/goback"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:gravity="center"
+        android:background="#0085F8">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/progress"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:text="请长按开发板上的“USER”按钮5秒以上来重置设备"/>
+
+        <Button
+            android:id="@+id/id_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0085F8"
+            android:layout_margin="15dp"
+            android:textColor="#FFF"
+            android:text="下一步"/>
+    </LinearLayout>
+</LinearLayout>
